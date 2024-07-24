@@ -1,0 +1,96 @@
+body {
+    padding-top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 960px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+#navigation_home {
+    margin-left: 130px !important;
+
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.form-wrapper {
+    padding: 30px;
+}
+
+#form-title {
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    padding-left: 30px;
+}
+
+.form-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+#toggle-form {
+    background: linear-gradient(135deg, #8e73ff, #d0a0ff);
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+#toggle-form:hover {
+    background: linear-gradient(135deg, #d0a0ff, #8e73ff);
+}
+
+.text-center {
+    color: #444;
+}
+
+.register-mode .image-section {
+    order: 1;
+}
+
+.register-mode .form-section {
+    order: 0;
+}

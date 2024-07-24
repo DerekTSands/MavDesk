@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="/static/css/rocket.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Open+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+    <div class="row align-items-center login-container">
+        <div class="col-md-6 form-section">
+            <div class="form-wrapper">
+                <h2 th:text="${formTitle}">Sign Up</h2>
+                <form th:action="@{/auth}" method="post" id="auth-form">
+                    <div class="form-group position-relative" th:if="${isRegister}">
+                        <input type="text" class="form-control" placeholder="User name" name="username" required>
+                        <i class="fas fa-user form-icon"></i>
+                    </div>
+                    <div class="form-group position-relative" th:if="${isRegister}">
+                        <input type="email" class="form-control" placeholder="Email" name="email" required>
+                        <i class="fas fa-envelope form-icon"></i>
+                    </div>
+                    <div class="form-group position-relative">
+                        <input type="password" class="form-control" placeholder="Password" name="password" required>
+                        <i class="fas fa-lock form-icon"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" th:text="${buttonText}">Sign Up</button>
+                </form>
+                <p class="mt-3 text-center" th:text="${toggleText}">Already Have Account?</p>
+                <button type="button" class="btn btn-secondary btn-block" id="toggle-form">Login</button>
+            </div>
+        </div>
+        <div class="col-md-6 image-section">
+            <img src="/static/img/logo2.png" alt="Logo" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+
+<!-- Custom JS -->
+<script src="/static/js/scripts.js"></script>
+</body>
+</html>

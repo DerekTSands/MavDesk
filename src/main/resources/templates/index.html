@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Site</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+</head>
+<body>
+<!-- Navbar -->
+<section id="navigation_home">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">MavDesk</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+        </ul>
+    </div>
+</nav>
+</section>
+<!-- Hero Section -->
+<section id="home" class="hero-section bg-light text-center d-flex align-items-center" style="height: 100vh;">
+    <div class="container">
+        <h1 class="display-4">Welcome to Our Product</h1>
+        <p class="lead">Get more information about our product.</p>
+        <a href="#services" class="btn btn-primary">Learn More</a>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="about-section bg-white text-center py-5">
+    <div class="container">
+        <h2>About Us</h2>
+        <p class="lead">We are a company that values excellence...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante justo, pharetra eu maximus tincidunt, mattis semper nisl.
+            Maecenas elit mauris, volutpat in est vel, ullamcorper congue ipsum. Nunc sed elit nulla. Quisque eget enim ex.
+            Pellentesque consequat ligula ut luctus pellentesque. Nulla malesuada, augue tincidunt pharetra mattis, leo tortor dapibus dui,
+            quis ultrices sapien nulla vel neque. Cras feugiat enim et sagittis cursus.
+            Phasellus pulvinar vestibulum nulla eget varius. Mauris mollis hendrerit congue. Integer eu convallis nibh.</p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services-section bg-light text-center py-5">
+    <div class="container">
+        <h2>Our Services</h2>
+        <p class="lead">Discover what we offer...</p>
+        <a href="#support" class="btn btn-primary">Get Support</a>
+    </div>
+</section>
+
+<!-- Support Section -->
+<section id="support" class="support-section bg-white text-center py-5">
+    <div class="container">
+        <h2>Need Help?</h2>
+        <p class="lead">If you have any issues, click the button below to submit a ticket.</p>
+        <a href="/submit_ticket" class="btn btn-primary">Submit a Ticket</a>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section bg-light text-center py-5">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" class="form-control" id="contactName" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="contactPhone">Phone</label>
+                <input type="text" class="form-control" id="contactPhone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="contactProduct">Product</label>
+                <select class="form-control" id="contactProduct" required>
+                    <option value="">Select a product</option>
+                    <option value="product1">Product 1</option>
+                    <option value="product2">Product 2</option>
+                    <option value="product3">Product 3</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 The Coterie Group. All rights reserved.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#home" class="text-white">Home</a></li>
+            <li class="list-inline-item"><a href="#about" class="text-white">About Us</a></li>
+            <li class="list-inline-item"><a href="#services" class="text-white">Services</a></li>
+            <li class="list-inline-item"><a href="#contact" class="text-white">Contact Us</a></li>
+            <li class="list-inline-item"><a href="#support" class="text-white">Support</a></li>
+            <li class="list-inline-item"><a href="/login" class="text-white">Employee Login</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
